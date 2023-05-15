@@ -11,3 +11,7 @@ COPY requirements.txt /code/
 RUN pip install -r requirements.txt
 # Copy the Django project
 COPY . /code/
+COPY . .
+EXPOSE 5000
+RUN chmod +x /app/start.sh
+ENTRYPOINT ["./start.sh"]
