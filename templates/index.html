@@ -1,0 +1,311 @@
+{% extends 'base.html' %}
+{% load static %}
+<!-- Page Wrapper -->
+{% block content %}
+
+
+    <div class="page-wrapper">
+
+        <!-- START PRELOADER  -->
+        <div class="atf-preloader">
+            <div class="atf-status">
+                <div class="atf-lds-roller">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <!-- END PRELOADER -->
+
+        <!-- START BACK TO TOP -->
+        <button class="atf-scroll-top atf-back-to-top" data-targets="html">
+            <i class="fas fa-long-arrow-alt-up atf-scrollup-icon"></i>
+        </button>
+        <!-- END BACK TO TOP-->
+
+        <!--START HEADER -->
+        <header>
+            <nav class="navbar navbar-navs navbar-expend navbar-expand-md fixed-top" id="menu-top">
+                <div class="container">
+                    <a class="navbar-brand" href="{% url 'index' %}">مشاوره با ما </a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                            data-target="#navbarDefault" aria-controls="navbarDefault" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarDefault">
+                        <ul class="navbar-nav">
+                            <li class="menu-nav"><a class="nav-link page-scroll active" href="#home"> خانه </a></li>
+                            <li class="menu-nav"><a class="nav-link page-scroll" href="#about">درباره من </a></li>
+                            <li class="menu-nav"><a class="nav-link page-scroll" href="#contact"> ارتباط با من </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- END HEADER -->
+
+        <!-- MAIN HOME START -->
+        <section id="home"
+                 class="atf-header-area atf-home-area atf-align-items-details atf-bg-home atf-cover-bg atf-width-area">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="row atf-content-details align-items-center">
+                    <!--RIGHT COL-->
+                    <div class="col-md-5 atf_home_img2 text-lg-center wow fadeInLeft" data-wow-duration="2s"
+                         data-wow-delay="0.4s" data-wow-offset="0">
+                        <img src="{% static 'assets/img/banner/photo_2023-05-13_18-56-34.jpg' %}" alt="portfolio" class="card-s">
+                    </div><!--- END COL -->
+
+                    <!--LEFT COL-->
+                    <div class="col-md-7 atf-single-details text-lg-left pl-lg-5">
+                        <h5>!سلام</h5>
+                        <h2 class="mb-0 d-block d-lg-block"><strong> من میسم رشیدی هستم</strong><br/> <span
+                                class="theme_gray"></span><span
+                                class="typed-word"></span></h2>
+                    </div>
+
+                </div><!--- END ROW -->
+            </div><!--- END CONTAINER -->
+        </section>
+        <!-- MAIN HOME END -->
+
+
+        <!-- START ABOUT -->
+        <section id="about" class="atf-section-padding">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-lg-12 col-md-12">
+                        <div class="atf-section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s"
+                             data-wow-offset="0">
+                            <h2 class=""> درباره من </h2>
+                            <div class="atf-sec_icon"><span></span><span class="atf-sec_radius"></span><span></span>
+                            </div>
+                            <p class="">من میسم رشیدی کارشناسی ارشد مشاوره و روانشناسی هستم.
+                                عضو سازمان نظام روانشاسی و مشاوره.مشاور خانواده وزوج درمانگر، خدمات درمانی من و حوزه درمانی من در زیر بخوانید
+                            </p>
+                        </div>
+                    </div><!--- END COL -->
+                </div><!--- END ROW -->
+                <div class="row atf-section-padding pb-0">
+                    <div class="col-lg-6 col-md-6 col-12">
+                        <div class="atf-about-content atf-main-about  wow fadeInUp" data-wow-duration="1s"
+                             data-wow-delay="0.2s" data-wow-offset="0">
+                            <div class="atf-single-about d-block d-md-flex">
+                                <div class="atf-about-icon mr-md-4"><i class="fa fa-users"></i></div>
+                                <div class="atf-about-text">
+                                    <h3>زوج درمانگر </h3>
+                                    <p>زوج‌ درمانی نوعی از روان درمانی است که در آن، یک درمانگر با تجربه بالینی با
+                                        زوج‌ها کار می‌کند و کمک می‌کند تا هر دو فرد درگیر در روابط عاشقانه، در رابطه‌شان
+                                        بینش کسب کنند، ناسازگاری را حل کنند و رضایت از رابطه را با استفاده از انواع
+                                        مداخلات درمانی بهبود بخشند.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="atf-about-content atf-main-about  wow fadeInUp" data-wow-duration="3s"
+                             data-wow-delay="0.4s" data-wow-offset="0">
+                            <div class="atf-single-about d-block d-md-flex">
+                                <div class="atf-about-icon mr-md-4"><i class="fa fa-frown-open"></i></div>
+                                <div class="atf-about-text">
+                                    <h3>اضطراب</h3>
+                                    <p>استرس و اضطراب نوعی اختلال می باشد که اعصاب و روان افراد را تحت شعاع قرار می دهد.
+                                        استرس و اضطراب ممکن است بر اثر دلایل خاص و یا بعد از مواجه شدن با این مشکل و یا
+                                        حادثه در شما ایجاد شود. استرس و اضطراب دلایل مختلفی دارند. این اختلال ممکن است
+                                        حاد و شدید باشد و همچنین می تواند ساده و معمولی باشد..</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="atf-about-content atf-main-about  wow fadeInUp" data-wow-duration="3s"
+                             data-wow-delay="0.4s" data-wow-offset="0">
+                            <div class="atf-single-about d-block d-md-flex">
+                                <div class="atf-about-icon mr-md-4"><i class="fa fa-sad-cry"></i></div>
+                                <div class="atf-about-text">
+                                    <h3>افسردگی </h3>
+                                    <p>فسردگی حالتی خلقی شامل بی‌حوصلگی و گریز از فعالیت یا بی‌علاقگی و بی‌میلی است و
+                                        می‌تواند بر افکار، رفتار، احساسات و خوشی و تندرستی یک فرد تأثیر بگذارد. وهمچنین
+                                        گفت وگوهای ذهنی به وجود می‌آورد
+                                        افراد افسرده هم می‌توانند احساس ناراحتی، اضطراب، پوچی، ناامیدی، درماندگی،
+                                        بی‌ارزشی، شرمساری یا بی‌قراری داشته باشند. ممکن است آن‌ها اشتیاق خود در انجام
+                                        فعالیت‌هایی که زمانی برایشان لذت‌بخش بوده از دست بدهند، نسبت به غذا بی‌میل و
+                                        کم‌اشتها شوند، تمرکز خود را از دست بدهند، در به‌خاطر سپردن جزئیات و تصمیم‌گیری
+                                        دچار مشکل شوند، در روابط خود به مشکل، برخورد کنند و به خودکشی فکر کرده، قصد آن
+                                        را داشته باشند و حتی خودکشی کنند.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="atf-about-content atf-main-about  wow fadeInUp" data-wow-duration="3s"
+                             data-wow-delay="0.4s" data-wow-offset="0">
+                            <div class="atf-single-about d-block d-md-flex">
+                                <div class="atf-about-icon mr-md-4"><i class="fa fa-genderless"></i></div>
+                                <div class="atf-about-text">
+                                    <h3>مشکلات جنسی </h3>
+                                    <p> مشکل جنسی یا اختلال جنسی به هر گونه مشکل در طول چرخه پاسخ جنسی اطلاق می‌گردد که
+                                        سبب می‌شود زوجین یا یکی از آنها از روابط جنسی شان رضایت نداشته باشند. چرخه پاسخ
+                                        جنسی دارای 4 مرحله زیر است: میل جنسی، مرحله تحریک جنسی یا برانگیختگی جنسی،
+                                        ارگاسم و فرونشینی.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--- END COL -->
+
+
+                    <div class="col-lg-6 col-md-6 col-12 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s"
+                         data-wow-offset="0">
+                        <div class="atf-about-img text-lg-center text-center my-auto mt-lg-2">
+                            <img src="{% static 'assets/img/banner/me-1 (2).jpeg' %}" alt="about-image"
+                                 class="img-fluid card-s"/>
+                        </div>
+                    </div><!--- END COL -->
+                </div><!--- END ROW -->
+            </div><!--- END CONTAINER -->
+        </section>
+        <!-- END ABOUT -->
+
+
+        <!-- START HIRE -->
+        <div class="atf-hire text-center">
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-12 col-md-12">
+                        <div class="atf-hire-area">
+                            <div class="atf-hire-content text-center">
+                                <h3> !برای درمان و رزرو وقت با ما تماس بگیرید</h3>
+                                <p>اگر به دتبال بهترین درمان و پیشگری در حوزه روان درمانی هستید با ما تماس بگیرید</p>
+                            </div>
+                            <a href="#contact" class="atf-themes-btn nav-link page-scroll">ارسال ایمیل</a>
+                        </div>
+                    </div><!--- END COL -->
+                </div><!--- END ROW -->
+            </div><!--- END CONTAINER -->
+        </div>
+        <!-- END HIRE-->
+
+
+        <!-- START CONTACT -->
+        <section id="contact" class="atf-contact-area atf-section-padding">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="atf-section-title">
+                            <h2 class="">ارتباط با من</h2>
+                            <div class="atf-sec_icon"><span></span><span class="atf-sec_radius"></span><span></span>
+                            </div>
+                            <p class="">با ارسال فرم زیر یا کلیک بر روی ایکن های فضای مجازی ما در پایین صفخه با من در
+                                ارتباط باشید
+                            لطفا تا دیدن تایید ارسال ایمیل در پایین دکمه ارسال صبر کنید
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-10 col-md-12 offset-lg-1">
+                        <div class="row atf-contact-border">
+                            <div class="col-md-12 col-lg-7 atf-border-right text-right">
+                                <h3>ارتباط با من </h3>
+                                <form class="form atf-contact-form" id="contact-form"
+                                      action="{% url 'index' %}" method="POST">
+                                    <div class="atf-main-contact">
+                                        <div class="col-md-12">
+                                            <div class="form-group">
+                                                {% csrf_token %}
+                                                {{ form.as_p }}
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="atf-contact-btn">
+                                                <button type="submit" class="btn atf-themes-btn">ارسال ایمیل</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <br/>
+                                <p class="form-message"></p>
+                            </div><!--- END COL -->
+
+                            <div class="col-lg-5 col-md-12 col-12">
+                                <div class="atf-contact-info text-center">
+                                    <div class="atf-contact-details">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                        <div class="atf-contact-address">
+                                            <h4>ادرس محل کار</h4>
+                                            <p>تهران،جردن، کلینیک جردن </p>
+                                        </div>
+                                    </div>
+                                    <div class="atf-contact-details">
+                                        <i class="fas fa-phone-volume"></i>
+                                        <div class="atf-contact-address">
+                                            <h4>شماره تماس </h4>
+                                            <p>0994 174 8396</p>
+                                        </div>
+                                    </div>
+                                    <div class="atf-contact-details">
+                                        <i class="fa fa-envelope"></i>
+                                        <div class="atf-contact-address atf-contact-address1">
+                                            <h4>ایمیل ادرس</h4>
+                                            <p>rmaysam958@gmail.com</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!--- END COL -->
+                        </div><!--- END ROW -->
+                    </div><!--- END COL -->
+                </div><!--- END ROW -->
+            </div><!--- END CONTAINER -->
+        </section>
+        <!-- END CONTACT-->
+
+        <!-- Google Map start-->
+        <div id="atf-map-area">
+            <iframe style="border:none"
+                    src="https://maps.google.com/maps?width=100%25&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                    allowfullscreen></iframe>
+        </div>
+        <!-- Google Map end -->
+
+        <!-- START FOOTER -->
+        <footer class="atf-footer-area">
+            <div class="container">
+                <div class="atf-footer-boottom text-center">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <p>&copy;Copyright - All Right Reserved.
+                                back-end by <a href="https://t.me/xani1375">Xaniar</a>
+                            </p>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-12">
+                            <!-- Start Social Share -->
+                            <div class="atf-banner-social mt-0">
+                                <ul class="atf-banner-icon  list-unstyled">
+                                    <li class="facebook"><a title="تلگرام" href="https://t.me/MRCUF"><i
+                                            class="fab fa-telegram"></i></a>
+                                    </li>
+                                    <li class="instagram"><a title="اینستاگرام"
+                                                             href="https://instagram.com/maisamrashidi8129?igshid=NTc4MTIwNjQ2YQ=="><i
+                                            class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="whatsapp"><a title="واتس اپ" href="https://wa.link/xoqbrr"><i
+                                            class="fab fa-whatsapp"></i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--- END COL -->
+                    </div><!--- END ROW -->
+                </div>
+            </div><!--- END CONTAINER -->
+        </footer>
+        <!-- END FOOTER-->
+
+    </div>
+    <!-- END OF PAGE WRAPPER-->
+{% endblock %}
