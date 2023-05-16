@@ -5,9 +5,9 @@ ENV PYTHONUNBUFFERED 1
 # Set working directory
 RUN mkdir core
 # set the working directory
-COPY . /test_blog/
+COPY . /core/
 # coppy commands
-WORKDIR /test_blog
+WORKDIR /core
 # update docker-iamage packages
 RUN apt-get update && \
     apt-get upgrade -y && \
