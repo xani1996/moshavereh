@@ -1,17 +1,25 @@
-# Pull official base Python Docker image
+# base image
 FROM python:3.10.9
-# Set environment variables
-ENV PYTHONDONTWRITEBYTECODE=1
-ENV PYTHONUNBUFFERED=1
-# Set work directory
-WORKDIR /code
-# Install dependencies
+# options
+ENV PYTHONUNBUFFERED 1
+# Set working directory
+RUN mkdir core
+# set the working directory
+COPY . /test_blog/
+# coppy commands
+WORKDIR /test_blog
+# update docker-iamage packages
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y netcat-openbsd gcc && \
+    apt-get clean
+
+# update pip
 RUN pip install --upgrade pip
-COPY requirements.txt /code/
+# install python packages
 RUN pip install -r requirements.txt
-# Copy the Django project
-COPY . /code/
-COPY . .
+# create static directory
+RUN mkdir static
+# RUN python manage.py collectstatic --no-input
 EXPOSE 5000
-RUN chmod +x /app/start.sh
-ENTRYPOINT ["./start.sh"]
+CMD ["gunicorn","--bind", ":5000", "test_blog.wsgi:application"]
