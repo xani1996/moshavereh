@@ -1,12 +1,10 @@
-source /venv/bin/activate
-cd /app
+#!bin/sh
 
 echo "----- Collect static files ------ "
-python manage.py collectstatic --noinput
+python manage.py collectstatic
 
 echo "-----------Apply migration--------- "
-python manage.py makemigrations
 python manage.py migrate
 
 echo "-----------Run gunicorn--------- "
-gunicorn -b :5000 myproject.wsgi:application
+gunicorn -b :5000 test_blog.wsgi:application

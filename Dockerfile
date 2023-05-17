@@ -18,5 +18,7 @@ RUN apt-get update && \
 RUN pip install --upgrade pip
 # install python packages
 RUN pip install -r requirements.txt
+COPY ./entrypoint.sh /
+ENTRYPOINT ["sh", "/entrypoint.sh"]
 EXPOSE 5000
 CMD ["gunicorn","--bind", ":5000", "core.wsgi:application"]
