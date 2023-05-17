@@ -19,4 +19,4 @@ RUN pip install --upgrade pip
 # install python packages
 RUN pip install -r requirements.txt
 EXPOSE 5000
-CMD ["gunicorn","--bind", ":5000", "test_blog.wsgi:application"]
+CMD ["gunicorn","--bind", ":5000", "core.wsgi:application"]
