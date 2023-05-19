@@ -31,7 +31,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY', "secret_key")
 DEBUG = env.bool("DEBUG", default=False)
 
 ALLOWED_HOSTS = ["*"]
-
+CSRF_TRUSTED_ORIGINS = [
+    'https://maisam-bloggv5u.kfirjgyswf.dopraxrocks.com'
+]
 # Application definition
 
 INSTALLED_APPS = [
