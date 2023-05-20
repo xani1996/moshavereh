@@ -23,6 +23,6 @@ def index(request):
                 send_mail(subject, message, 'work.moshavereh@gmail.com', ['rmaysam958@gmail.com'])
             except BadHeaderError:
                 return HttpResponse('اشکال در ارسال ایمیل.')
-            return HttpResponse('ایمیل شما با موفیت ارسال شد ')
+            return HttpResponse('ایمیل شما با موفقیت ارسال شد ')
     form = ContactForm
     return render(request, 'index.html', {'form': form})
